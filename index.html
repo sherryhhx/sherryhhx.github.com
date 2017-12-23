@@ -1,70 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>无标题文档</title>
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-<link rel="stylesheet" href="css/bootstrap.min.css" />
-<style>
-header img{
-    width:50%;
-    height:50%;
-    margin:25%;
-}
-</style>
-</head>
-
 <body>
-	<h1 class="text-center">my world</h1>
-	<div class="containar">
-		<div class="col-xs-3">
-			<header class="text-center">
-				<img src="images/1.jpg" class="img-circle" />
-				<p class="text-align">
-					一个热爱搬砖事业的<br />
-					搬砖queen
-				</p>
-			</header>
-			<table class="table art-list">
-				<thead>
-					文章列表
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							<a href="javascript:;">
-								2017／10
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="javascript:;">
-								2.关于
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="javascript:;">
-								3.关于
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="javascript:;">
-								4.关于
-							</a>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="col-xs-9">222</div>
-	</div>
+
+<h3>演示如何创建 Date 字段</h3>
+
+<p>点击按钮来创建 Date 字段。</p>
+
+<button onclick="myFunction()">试一下</button>
 
 <script>
+function myFunction() {
+    var x = document.createElement("INPUT");
+    x.setAttribute("type", "date");
+    x.setAttribute("value", "2014-06-01");
+    document.body.appendChild(x);
+}
 </script>
+
 </body>
 </html>
